@@ -1,0 +1,76 @@
+*{
+    background-color: darkgrey;
+    font-family: 'Nova Square', sans-serif;
+    text-decoration: none;
+}
+div.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "cabecalho"
+                         "menu"
+                         "principal"
+                         "rodape";
+}
+header{
+    grid-area: cabecalho;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+navbar{
+    grid-area: menu;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main{
+    grid-area: principal;
+}
+footer{
+    grid-area: rodape;
+}
+navbar a{
+    background-color: black;
+    color: white;
+}
+img{
+    height: 250px;
+    border-radius: 10px;
+    display: block;
+    margin: 100px;
+}
+div.apple{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+div.samsung{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+div.dell{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+}
+div.intro{
+    width: 450px;
+    font-size: 25px;
+}
+h1{
+    font-size: 75px;
+}
+a{
+    align-items: center;
+}
+p{
+    word-break: break-word;
+}
