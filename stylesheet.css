@@ -1,0 +1,99 @@
+*{
+    background-color: darkgrey;
+    font-family: 'Nova Square', sans-serif;
+    text-decoration: none;
+}
+div.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "cabecalho"
+                         "menu"
+                         "principal"
+                         "rodape";
+}
+header{
+    grid-area: cabecalho;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+navbar{
+    grid-area: menu;
+    background-color: black;
+    color: white;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main{
+    grid-area: principal;
+}
+footer{
+    grid-area: rodape;
+}
+navbar a{
+    background-color: black;
+    color: white;
+}
+img{
+    height: 250px;
+    border-radius: 10px;
+    display: block;
+    margin: 100px;
+}
+div.apple{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+div.samsung{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+div.dell{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+}
+div.intro{
+    width: 450px;
+    font-size: 25px;
+}
+h1{
+    font-size: 75px;
+}
+a{
+    align-items: center;
+}
+p.texto1,.texto2,.texto3{
+    word-break: break-word;
+    display: block;
+}
+span#burguer{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+span#burguer:hover{
+    background-color: white;
+    color: black;
+}
+span#seta{
+    color: rgb(0, 0, 0);
+    cursor: pointer; 
+    border-radius: 50%;   
+}
+span#seta:hover{
+    color: rgb(255, 255, 255);
+    border-radius: 50%; 
+}
+p{
+    display: inline;
+}

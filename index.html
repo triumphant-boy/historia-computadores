@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computadores</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="img_da_aba.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1 ,-50..200" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>História dos Computadores</h1>
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+                menu
+            </span>
+        </header>
+        <navbar id="barra">
+            <h5><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a">Grandes nomes</a></h5>
+            <h5><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a">Primeiras linguagens</a></h5>
+            <h5><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a">Curiosidades</a></h5>
+        </navbar>
+        <main>
+            <div class="apple">
+                <a href="https://www.apple.com/br/mac/"><img class="imgapple" src="apple_lisa.jpeg"></a>
+                <div class="intro">
+                    <p class="texto1">Apple Inc. é uma empresa multinacional norte-americana que tem o objetivo de projetar e comercializar produtos eletrônicos de consumo, software de computador e computadores pessoais.</p>
+                    <a href="https://flexboxfroggy.com/"><span id="seta" class="material-symbols-outlined" onclick="clickSeta()">
+                    arrow_circle_right
+                    </span></a>
+                    <p>Mais detalhes</p>
+                </div>
+            </div>
+            
+            <div class="samsung">
+                <a href="https://www.samsung.com/br/galaxy-book/?product1=np550xed-ks1br&product2=&product3=np550xed-ks1br"><img src="book3.jpg"></a>
+                <div class="intro"><p class="texto2">Samsung Electronics é uma grande empresa multinacional sul-coreana de eletrodomésticos e eletrônicos de consumo com sede em Yeongtong-gu, Suwon , Coreia do Sul.</p></div>
+            </div>
+            <div class="dell">
+                <a href="https://www.dell.com/pt-br/shop/notebooks/sc/laptops"><img src="delldimension.jpg"></a>
+                <div class="intro"><p class="texto3">Dell, Inc., mais conhecida por Dell, é uma empresa de hardware de computador dos Estados Unidos, empregando mais de 165 mil pessoas no mundo inteiro.</p></div>
+            </div>
+            
+        </main>
+        <footer></footer>
+        
+    </div>
+    <script>
+        function clickMenu(){
+            if(barra.style.display=='flex'){
+                barra.style.display='none'
+            }
+            else{
+                barra.style.display='flex'
+            }
+        }
+        function clickSeta(){
+
+        }
+    </script>
+</body>
+</html>
